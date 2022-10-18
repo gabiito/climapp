@@ -1,0 +1,65 @@
+{
+    "0": {
+        "name": "Despejado",
+        "icons": {
+            "day": "./icos/sol.svg",
+            "night": "./icos/luna.svg"
+        }
+    },
+    "1": {
+        "name": "Poco nublado",
+        "icons": {
+            "day": "./icos/sol-nube.svg",
+            "night": "./icos/luna-nube.svg"
+        }
+    },
+    "2": {
+        "name": "Parcialmente nublado",
+        "icons": {
+            "day": "./icos/sol-nube.svg",
+            "night": "./icos/luna-nube.svg"
+        }
+    },
+    "3": {
+        "name": "Nublado",
+        "icons": {
+            "day": "./icos/nube.svg",
+            "night": "./icos/nube.svg"
+        }
+    },
+    "45": {
+        "name": "Niebla",
+        "icons": {
+            "day": "./icos/sol-niebla.svg",
+            "night": "./icos/luna-niebla.svg"
+        }
+    },
+    "48": {
+        "name": "Niebla",
+        "icons": {
+            "day": "./icos/sol-niebla.svg",
+            "night": "./icos/luna-niebla.svg"
+        }
+    },
+    "61": {
+        "name": "Lluvia leve",
+        "icons": {
+            "day": "./icos/sol-lluvia.svg",
+            "night": "./icos/luna-lluvia.svg"
+        }
+    },
+    "63": {
+        "name": "Lluvia moderada",
+        "icons": {
+            "day": "./icos/sol-lluvia-moderada.svg",
+            "night": "./icos/luna-lluvia-moderada.svg"
+        }
+    },
+    "65": {
+        "name": "Lluvia intensa",
+        "icons": {
+            "day": "./icos/lluvia-fuerte.svg",
+            "night": "./icos/lluvia-fuerte.svg"
+        }
+    }
+}

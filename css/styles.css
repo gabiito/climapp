@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+
+.weather {
+    background-color: #f9fafb;
+    min-width: 200px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #07598525;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.weather__icon {
+    width: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.weather__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.weather__info-temp {
+    font-size: 44px;
+}
+
+.weather__info-temp::after {
+    content: "°C";
+    font-size: 24px;
+}
+
+.weather__info-wind {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: end;
+}
+.weather__info-wind img {
+    width: 35px;
+}
+
+.wheather__placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f5f9;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wheather__placeholder-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #f8fafca0;
+    box-shadow: 0 0 12px #f8fafca0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loading 1s infinite;
+}
+
+.hidden {
+    animation: hide 1s forwards;
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

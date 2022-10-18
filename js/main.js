@@ -1,3 +1,5 @@
+const API_URL = 'https://api.open-meteo.com/v1/forecast?latitude=-34.8941&longitude=-56.0675&current_weather=1&timezone=America/Montevideo';
+
 document.addEventListener('DOMContentLoaded', async function() {
     const icon = document.querySelector('.weather__icon img');
     const temp = document.querySelector('.weather__info-temp');
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 async function getWeather() {
-    const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=-34.8941&longitude=-56.0675&current_weather=1&timezone=America/Montevideo');
+    const response = await fetch(API_URL);
     const weather = await response.json();
     return {
         temp: weather.current_weather.temperature,
